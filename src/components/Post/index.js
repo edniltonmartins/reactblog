@@ -1,3 +1,4 @@
+import "./styles.css"
 
 function Post(props){
     let time = props.readingTime;
@@ -6,13 +7,13 @@ function Post(props){
         texto = `Leia em ${props.readingTime} ${props.readingTime === 1 ? "minuto" : "minutos"}`;
     }
     return (
-        <>
+        <article>
             <h2>{props.title}</h2>
             <small>
                 {texto}
             </small>
             {props.children}
-        </>
+        </article>
     )
 }
 

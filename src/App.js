@@ -1,5 +1,4 @@
 import './App.css';
-import Main from './components/Main';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Post from './components/Post';
@@ -9,8 +8,12 @@ function App() {
     <>
       <Header/>
      <main>
-       <Post title="Primeiro Post" readingTime={1}/>
-       <Post title="Segundo Post">
+       <Post title="Primeiro Post" readingTime={1}>
+          <p>Introdução...</p>
+          <p>Desenvolvimento da idéia...</p>
+          <p>Conclusão...</p>
+       </Post>
+       <Post title="Segundo Post" readingTime={5}>
           <p>Introdução...</p>
           <p>Desenvolvimento da idéia...</p>
           <p>Conclusão...</p>
